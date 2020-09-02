@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+nav {
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid #d2d2d2;
+  z-index: 10;
+  background-color: white;
+}
+#logo {
+  animation: fill 0.5s ease forwards 3s;
+}
+#logo path:nth-child(1) {
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(2) {
+  stroke-dasharray: 188;
+  stroke-dashoffset: 188;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(3) {
+  stroke-dasharray: 469;
+  stroke-dashoffset: 469;
+  animation: line-anim 2s ease forwards 0.5s;
+}
+#logo path:nth-child(4) {
+  stroke-dasharray: 430;
+  stroke-dashoffset: 430;
+  animation: line-anim 2s ease forwards 0.7s;
+}
+#logo path:nth-child(5) {
+  stroke-dasharray: 430;
+  stroke-dashoffset: 430;
+  animation: line-anim 2s ease forwards 0.8s;
+}
+#logo path:nth-child(6) {
+  stroke-dasharray: 206;
+  stroke-dashoffset: 206;
+  animation: line-anim 2s ease forwards 0.9s;
+}
+.split {
+  position: relative;
+}
+.split-right,
+.split-left {
+  width: 50%;
+}
+.split-right {
+  position: relative;
+}
+.split-left {
+  /* border: green 1px solid; */
+  position: relative;
+}
+.split {
+  display: flex;
+}
+.beer {
+  position: -webkit-sticky;
+  font-family: "Lexend Peta", sans-serif;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  font-size: 3rem;
+  font-weight: 800;
+  top: 56px;
+  background-color: #fbfaf9;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.introduce {
+  font-family: "Gothic A1", sans-serif;
+  font-size: 2rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfa92;
+  position: sticky;
+  top: 56px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.have-time {
+}
+/* .section-2 {
+  height: 100vh;
+  position: relative;
+  z-index: 20;
+} */
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: black;
+  }
+}
