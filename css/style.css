@@ -77,6 +77,7 @@ nav {
   line-height: 1.5;
 }
 .description-container .title {
+  font-weight: 700;
   font-size: 2rem;
   padding-top: 2rem;
   padding-left: 3rem;
@@ -109,7 +110,7 @@ nav {
   font-size: 3rem;
   font-weight: 800;
   top: 56px;
-  background-color: #fbfaf9;
+  background-color: #fbf8f4;
   padding-left: 3rem;
   padding-right: 3rem;
 }
