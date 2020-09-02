@@ -18,6 +18,13 @@ nav {
   z-index: 10;
   background-color: white;
 }
+.item {
+  font-family: "Lexend Peta", sans-serif;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #464646;
+}
+
 #logo {
   animation: fill 0.5s ease forwards 3s;
 }
@@ -59,8 +66,29 @@ nav {
   width: 50%;
 }
 .split-right {
+  font-family: "Montserrat", sans-serif;
   position: relative;
+  min-height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 56px;
+
+  line-height: 1.5;
 }
+.description-container .title {
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.description-container .description {
+  font-size: 1.3rem;
+  padding-top: 1.3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .split-left {
   /* border: green 1px solid; */
   position: relative;
@@ -69,6 +97,8 @@ nav {
   display: flex;
 }
 .beer {
+  position: sticky;
+  top: 56px;
   position: -webkit-sticky;
   font-family: "Lexend Peta", sans-serif;
   height: 80vh;
@@ -84,26 +114,45 @@ nav {
   padding-right: 3rem;
 }
 
-.introduce {
-  font-family: "Gothic A1", sans-serif;
+.introduce.sticky {
+  font-family: "Lexend Peta", sans-serif;
   font-size: 2rem;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fdfa92;
+  /* z-index: 3; */
   position: sticky;
-  top: 56px;
   padding-left: 3rem;
   padding-right: 3rem;
+  top: 56px;
 }
-.have-time {
-}
-/* .section-2 {
+.introduce.fixed {
+  font-family: "Lexend Peta", sans-serif;
+  font-size: 2rem;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfa92;
+  width: 50%;
+  position: fixed;
+
+  top: 56px;
+}
+
+.section-2 {
+  font-family: "Lexend Peta", sans-serif;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
   position: relative;
   z-index: 20;
-} */
+  background-color: #f5f3f3;
+}
 
 @keyframes line-anim {
   to {
@@ -116,5 +165,10 @@ nav {
   }
   to {
     fill: black;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 9px;
   }
 }
